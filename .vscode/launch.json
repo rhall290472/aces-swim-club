@@ -12,7 +12,7 @@
       "name": "Join / Tryouts",
       "type": "chrome",
       "request": "launch",
-      "file": "${workspaceFolder}/ACES-Join-Tryouts.html",
+      "file": "${workspaceFolder}/ACES-join-tryouts.html",
       "webRoot": "${workspaceFolder}"
     },
     {
