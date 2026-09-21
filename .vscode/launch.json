@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Home",
+      "type": "chrome",
+      "request": "launch",
+      "file": "${workspaceFolder}/home.html",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Join / Tryouts",
+      "type": "chrome",
+      "request": "launch",
+      "file": "${workspaceFolder}/ACES-Join-Tryouts.html",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Current file",
+      "type": "chrome",
+      "request": "launch",
+      "file": "${file}",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
