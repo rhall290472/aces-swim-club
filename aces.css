@@ -43,15 +43,15 @@ img { max-width: 100%; }
   position: relative;
   overflow: hidden;
   border-bottom: 4px solid var(--navy);
-  min-height: 220px;
-  background: #1a3358 var(--banner) center 40% / cover no-repeat;
+  min-height: 260px;
+  background: #1a3358 var(--banner) center 38% / cover no-repeat;
 }
-.skyline.skyline-short { min-height: 140px; }
+.skyline.skyline-short { min-height: 160px; }
 .skyline:after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(12,28,58,0.28) 0%, rgba(12,28,58,0.12) 45%, rgba(12,28,58,0.55) 100%);
+  background: linear-gradient(180deg, rgba(12,28,58,0.18) 0%, rgba(12,28,58,0.06) 42%, rgba(12,28,58,0.42) 100%);
   pointer-events: none;
 }
 .topbar {
@@ -306,6 +306,64 @@ th {
 }
 .faq summary { cursor: pointer; font-weight: 650; color: var(--navy); }
 .faq p { margin-top: 8px; color: #475569; }
+
+.feed { display: grid; gap: 10px; margin-top: 14px; }
+.event, .news-item {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  gap: 12px;
+  align-items: start;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+.event time, .news-item time {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.event h3, .news-item h3 { font-size: 1rem; }
+.event p, .news-item p { font-size: 0.85rem; color: #475569; }
+.sites-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+.sites-strip article { min-height: 0; }
+
+.coach-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 18px;
+}
+.coach {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px 20px;
+}
+.coach header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+.coach h3 { font-size: 1.2rem; }
+.coach .role {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--red);
+}
+.coach p { color: #334155; font-size: 0.92rem; }
+.coach .mail { display: inline-block; margin-top: 10px; font-weight: 650; }
+
+@media (max-width: 860px) {
+  .event, .news-item { grid-template-columns: 1fr; }
+  .sites-strip, .coach-grid { grid-template-columns: 1fr; }
+}
 
 footer {
   margin-top: 40px;
